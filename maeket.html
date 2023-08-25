@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 12% , rgba(9, 30, 121, 1) 65%,  rgba(2, 0, 36, 1) 100%);}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+
+nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav{
+  height: 70px;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  text-decoration: none;
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #063247;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+
+.main h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 76px;
+    font-size: 80px;
+    color: white;
+}
+select{
+    margin: 0 461px;
+    width: 200px;
+    height: 60px;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <label class="logo" ><img src="image/BizFusion-logos_white.png" alt="" width="223px"></label>
+            <ul>
+               <li><a class="active" href="#">Home</a></li>
+               <li>
+                  <a href="#">Features
+                  <i class="fas fa-caret-down"></i>
+                  </a>
+                  <ul class="drop">
+                     <li><a href="#">Idea Generator</a></li>
+                     <li><a href="#">Market Insights</a></li>
+                     <li><a href="#">Blog Posts</a></li>
+                     <li><a href="#">Competition</a></li>
+                     <li><a href="#">Data Analyzer</a></li>
+                     <li><a href="#">Connections</a></li>
+                  </ul>
+               </li>
+               <li>
+               <li><a href="#">About Us</a></li>
+             
+            </ul>
+         </nav> 
+    </header>
+    <div class="main">
+        <h1>MARKET INSIGHTS</h1>
+        <select>
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+    </div>
+</body>
+</html>
